@@ -36,8 +36,9 @@ call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~.vim/plugged')
     Plug 'scrooloose/nerdtree'
     Plug 'preservim/nerdcommenter'
     Plug 'mhinz/vim-startify'
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    "Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'ryanoasis/vim-devicons'
+    Plug 'sonph/onehalf', { 'rtp': 'vim' }
 call plug#end()
 
 autocmd VimEnter * NERDTree | wincmd p
@@ -47,4 +48,4 @@ autocmd VimEnter * NERDTree | if argc() > 0 || exists("s:std_in") | wincmd p | e
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists('s:std_in') | 
             \ execute 'NERDTree' argv()[0] | wincmd p | enew | execute 'cd '.argv()[0] | endif
 
-colorscheme = "dracula/vim"
+colorscheme onehalfdark
