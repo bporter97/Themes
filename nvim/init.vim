@@ -30,7 +30,6 @@ set ttyfast                 " Speed up scrolling in Vim
 
 call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~.vim/plugged')
 
-    Plug 'dracula/vim'
     Plug 'tc50cal/vim-terminal'
     Plug 'SirVer/ultisnips'
     Plug 'scrooloose/nerdtree'
@@ -38,7 +37,7 @@ call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~.vim/plugged')
     Plug 'mhinz/vim-startify'
     "Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'ryanoasis/vim-devicons'
-    Plug 'sonph/onehalf', { 'rtp': 'vim' }
+    Plug 'bluz71/vim-moonfly-colors'
 call plug#end()
 
 autocmd VimEnter * NERDTree | wincmd p
@@ -48,4 +47,4 @@ autocmd VimEnter * NERDTree | if argc() > 0 || exists("s:std_in") | wincmd p | e
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists('s:std_in') | 
             \ execute 'NERDTree' argv()[0] | wincmd p | enew | execute 'cd '.argv()[0] | endif
 
-colorscheme onehalfdark
+colorscheme moonfly
