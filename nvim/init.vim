@@ -28,7 +28,6 @@ call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~.vim/plugged')
     Plug 'dracula/vim'
     Plug 'ryanoasis/vim-devicons'
     Plug 'SirVer/ultisnips'
-    Plug 'honza/vim-sniipets'
     Plug 'scrooloose/nerdtree'
     Plug 'preservim/nerdcommenter'
     Plug 'mhinz/vim-startify'
