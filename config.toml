@@ -1,0 +1,10 @@
+theme = "doom_acario_dark"
+
+[editor]
+line-number = "absolute"
+auto-completion = true
+
+[editor.statusline]
+left = ["mode", "file-name"]
+center = ["file-encoding", "file-type"]
+right = ["diagnostics", "selections", "position"]
