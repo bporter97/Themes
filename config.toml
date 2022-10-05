@@ -1,7 +1,7 @@
-theme = "doom_acario_dark"
+theme = "tokyonight_storm"
 
 [editor]
-line-number = "absolute"
+line-number = "relative"
 auto-completion = true
 
 [editor.statusline]
