@@ -1,0 +1,4 @@
+ForeGround: #A9B1D6
+Background: #24283B
+Cursor color: #FFFFFF
+Selection background: #FFFFFF
