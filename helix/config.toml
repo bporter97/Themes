@@ -7,13 +7,14 @@ auto-completion = true
 mouse = true
 middle-click-paste = true
 shell = ["powershell", "/C"]
-cursorline = false
+cursorline = true
 auto-format = true
-completion-trigger-len = 5
+completion-trigger-len = 3
 auto-info = true
 true-color = false
 auto-pairs = true
-
+color-modes = true
+ 
 [editor.statusline]
 left = ["mode", "file-name"]
 right = ["file-encoding", "file-type"]
@@ -32,3 +33,6 @@ ignore = true # enables reading .ignore files
 git-ignore = true  #enables reading .gitignore files
 git-global = true
 git-exclude = true
+
+[editor.indent-guides]
+render = true
