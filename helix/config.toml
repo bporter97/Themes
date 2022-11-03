@@ -1,10 +1,34 @@
+
 theme = "tokyonight_storm"
 
 [editor]
 line-number = "relative"
 auto-completion = true
+mouse = true
+middle-click-paste = true
+shell = ["powershell", "/C"]
+cursorline = false
+auto-format = true
+completion-trigger-len = 5
+auto-info = true
+true-color = false
+auto-pairs = true
 
 [editor.statusline]
 left = ["mode", "file-name"]
-center = ["file-encoding", "file-type"]
-right = ["diagnostics", "selections", "position"]
+right = ["file-encoding", "file-type"]
+center = ["diagnostics", "selections", "position"]
+
+[editor.lsp]
+display-messages = true # Display lsp progress messsages below statusline
+
+[editor.cursor-shape]
+select = "underline"
+
+[editor.file-picker]
+hidden = false # enables ignoring hidden files
+parents = true # enables reading ignore files from parent directories
+ignore = true # enables reading .ignore files
+git-ignore = true  #enables reading .gitignore files
+git-global = true
+git-exclude = true
